@@ -1,14 +1,170 @@
+@import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
-@import 'abstracts/variables';
 
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/boxes';
+@import 'components/composition';
 @import 'components/button';
 
 @import 'layout/header';
+@import 'layout/navigation';
 
 @import 'pages/home';
+
+.part1 {
+  display: flex;
+  background-color: #f7f7f7;
+  margin-top: -20vh;
+
+  .conteiner {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 20vh;
+
+      .part1-headtext {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-top: 100px;
+      }
+
+      .part1_content {
+        display: flex;
+        margin-top: 50px;
+
+        .part1__info-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          .info-text--date1 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 85%;
+
+            .span1 {
+              font-size: 1.6rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #777;
+              margin-bottom: 20px;
+            }
+
+            .text1 {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              line-height: 1.7;
+              color: #777;
+            }
+          }
+
+          .info-text--date2 {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+
+            .span2 {
+              font-size: 1.6rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #777;
+              margin-bottom: 20px;
+            }
+            .text1 {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              line-height: 1.7;
+              color: #777;
+            }
+          }
+          .info-text--button {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.6rem;
+            color: #55c57a;
+            text-decoration: none;
+            border-bottom: 1px solid #55c57a;
+            cursor: pointer;
+            margin-top: 20px;
+
+            width: 15%;
+          }
+        }
+
+        .part1__picture-composition {
+          display: flex;
+          flex-direction: column;
+          margin-right: 250px;
+          .pc1 {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+          }
+          .pc2 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            left: 250px;
+            top: 40px;
+          }
+
+          .pc3 {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            bottom: 80px;
+            left: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.part2 {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb($first-color, 0.8),
+      rgb($second-color, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+margin-top: 100px;
+transform: skewY(-7deg); 
+border: 2px solid red;
+
+
+
+
+
+
+
+}
